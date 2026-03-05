@@ -13,18 +13,19 @@ public class Titik {
     static int counterTitik = 0;
 
     /*************** METHOD ***************/
-    //konstruktor untuk membuat titik (0,0)
+    //konstruktor untuk membuat titik (x,y)
     Titik(double x, double y){
         this.absis = x;
         this.ordinat = y; 
         counterTitik++;
     }
 
+    //konstruktor untuk membuat titik (0,0)
     Titik() {
         this(0,0);
         counterTitik++;
     }
-
+    
     //mengembalikan nilai absis
     double getAbsis() {
         return absis;
@@ -69,8 +70,8 @@ public class Titik {
         }
     }
 
-    double getJarak(Titik T1, Titik T2) {
-        double jarak = Math.sqrt(Math.pow(T2.absis - T1.absis, 2) + Math.pow(T2.ordinat - T1.ordinat, 2));
+    double getJarak(Titik T) {
+        double jarak = Math.sqrt(Math.pow(this.absis - T.absis, 2) + Math.pow(this.ordinat - T.ordinat, 2));
         return jarak;
     }
 

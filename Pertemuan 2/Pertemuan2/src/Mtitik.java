@@ -17,7 +17,7 @@ public class Mtitik {
         T4.printTitik(); //menampilkan koordinat T4
         System.out.println("Jumlah titik yang telah dibuat: " + Titik.getCounterTitik());
         System.out.println("Kuadran T1: " + T1.getKuadran());
-        System.out.println(T1.getJarak(T1,T3));
+        System.out.println(T1.getJarak(T3));
         System.out.println(T3.getJarakPusat());
         T4.refleksiX();
         T4.printTitik();
