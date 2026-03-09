@@ -56,6 +56,7 @@ public class Titik {
         ordinat = ordinat + y;
     }
 
+    /* Mengembalikan letak kuadran sebuah titik */
     double getKuadran() {
         if (absis > 0 && ordinat > 0) {
             return 1;
@@ -66,32 +67,38 @@ public class Titik {
         } else if (absis > 0 && ordinat < 0) {
             return 4;
         } else {
-            return 0; //titik berada pada sumbu x atau y
+            return 0;
         }
     }
 
+    /* Mengembalikan jarak sebuah titik dengan titik yang lain */
     double getJarak(Titik T) {
         double jarak = Math.sqrt(Math.pow(this.absis - T.absis, 2) + Math.pow(this.ordinat - T.ordinat, 2));
         return jarak;
     }
 
+    /* Mengembalikan jarak sebuah titik terhadap titik pusat (0,0) */
     double getJarakPusat(){
         double jarakPusat = Math.sqrt(Math.pow(absis, 2) + Math.pow(ordinat, 2));
         return jarakPusat;
     }
 
+    /* Merefleksikan sumbu x pada sebuah titik */
     void refleksiX(){
         ordinat = -ordinat;
     }
 
+    /* Merefleksikan sumbu y pada sebuah titik */
     void refleksiY(){
         absis = -absis;
     }
 
+    /* Mengembalikan ordinat dimana titik yang direflkesikan terhadap sumbu x */
     double getRefelksiX(){
         return -ordinat;
     }
 
+    /* Mengembalikan absis dimana titik yang direflkesikan terhadap sumbu y */
     double getrefleksiY(){
         return -absis;
     }
