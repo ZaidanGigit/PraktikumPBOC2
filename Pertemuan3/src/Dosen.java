@@ -1,3 +1,8 @@
+/* Nama File    : Dosen.java
+ * Deskripsi    : berisi atribut dan method dalam class Doseb
+ * pembuat      : Muhammad Zaidan Alfarizi
+ * Tanggal      : 15 Maret 2026
+ */
 public class Dosen {
 
     /* Atribut */
@@ -52,5 +57,6 @@ public class Dosen {
     public void setProdi(String prodi) {
         this.prodi = prodi;
     }
+
 
 }
