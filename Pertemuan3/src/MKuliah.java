@@ -1,3 +1,8 @@
+/* Nama File    : MKuliah.java
+ * Deskripsi    : berisi file main 
+ * pembuat      : Muhammad Zaidan Alfarizi
+ * Tanggal      : 15 Maret 2026
+ */
 public class MKuliah{
     public static void main(String[] args){
         /* Mata Kuliah */
