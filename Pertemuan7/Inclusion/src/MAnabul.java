@@ -1,0 +1,29 @@
+/*
+Nama        : Muhammad Zaidan Alfarizi
+NIM         : 24060124130102
+Tanggal     : 23 April 2026
+Deskripsi   : File Main Anabul
+*/
+
+import java.util.ArrayList;
+
+public class MAnabul {
+    public static void main (String[] args){
+        Anabul anabul1 = new Kucing("Kitty");
+        Anabul anabul2 = new Anjing("Bobby");
+        Anabul anabul3 = new Burung("Cici");
+
+        // Memasukkan semua objek Anabul kedalam List
+        ArrayList<Anabul> anabuls = new ArrayList<>();
+        anabuls.add(anabul1);  
+        anabuls.add(anabul2); 
+        anabuls.add(anabul3);
+        
+        // Mencetak seluruh data Anabul
+        for (Anabul anabul : anabuls) {
+            anabul.Bersuara(); 
+            anabul.Gerak();   
+            System.out.println(); 
+        }
+    }
+}
