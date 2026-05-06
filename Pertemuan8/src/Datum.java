@@ -1,0 +1,36 @@
+/*
+Nama        : Muhammad Zaidan Alfarizi
+NIM         : 24060124130102
+Tanggal     : 30 April 2026
+Deskripsi   : File Class Generik Datum
+*/
+
+public class Datum<T>{
+    // Atribut
+    private T isi;
+
+    // Konstruktor datum dengan menyalin nilai input pada objek yang baru
+    public Datum(T isi){
+        this.isi = isi;
+    }
+
+    // Selektor, mengembalikan nilai isi
+    public T getIsi(){
+        return isi;
+    }
+
+    // Mutator, mengubah nilai isi
+    public void setIsi(T isiBaru){
+        this.isi = isiBaru;
+    }
+
+    // Mencetak Anabul
+    public void tampilkanAnabul(Anabul anabul){
+        anabul.Gerak();
+        anabul.Bersuara();
+
+        if(anabul instanceof Kucing){
+            ((Kucing) anabul).printBobot();
+        }
+    }
+}
